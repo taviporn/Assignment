@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Calculate Service Fee</title>
+    </head>
+	
+	<style>
+		p.head {
+		padding-left: 8%;
+		}
+	</style>
+	
+	
+    <body>
+        
+        <br><br><br>
+        <table align=center width=1050 border="3">
+			<tr>
+				<td width=100%>
+					<br><br>
+					<h1 align=center>Welcome to Service Fee Calculation System</h1>
+					<br><br>
+				</td>
+			</tr>
+
+			<tr>			
+				<td valign="top" width=20% height=400 style="text-align:top;">
+					<br><br><br>
+					
+					
+				<script type="text/javascript" language="javascript" src="jquery-1.8.2.min.js"></script>        
+
+				<script type="text/javascript">
+    				$(document).ready(function(e) {
+    				$.getJSON( "totalFee.json" , function( result ){
+     			  	alert(result.start.count);
+   					});
+				});
+				</script>
+					
+				</td>				
+			</tr>       
+        </table>
+       
+    </body>
+</html>
